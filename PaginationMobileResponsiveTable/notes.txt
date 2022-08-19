@@ -48,7 +48,7 @@ https://embed.plnkr.co/qOwmd9xJvwYdJ37wsKWX/
 
 
 
-responsive
+responsive re
 
 https://stackoverflow.com/questions/32301206/how-to-fold-table-columns-into-rows-on-mobile-devices
 https://css-tricks.com/responsive-data-tables/
