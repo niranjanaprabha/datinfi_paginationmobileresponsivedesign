@@ -1,0 +1,55 @@
+https://stackoverflow.com/questions/64458283/how-to-fetch-api-data-and-view-in-html-table
+
+fetch("http://dummy.restapiexample.com/api/v1/employees").then(
+  res => {
+    res.json().then(
+      data => {
+        console.log(data.data);
+        if (data.data.length > 0) {
+
+          var temp = "";
+          data.data.forEach((itemData) => {
+            temp += "<tr>";
+            temp += "<td>" + itemData.id + "</td>";
+            temp += "<td>" + itemData.employee_name + "</td>";
+            temp += "<td>" + itemData.employee_salary + "</td></tr>";
+          });
+          document.getElementById('data').innerHTML = temp;
+        }
+      }
+    )
+  }
+)
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Employee Name</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody id="data">
+
+    </tbody>
+  </table>
+</div>
+
+https://www.w3schools.com/jsref/api_fetch.asp
+
+https://www.geeksforgeeks.org/javascript-fetch-method/
+
+loader
+https://www.w3schools.com/howto/howto_css_loader.asp
+https://stackoverflow.com/questions/38773538/css-table-loading-overlay-for-tbody
+https://stackoverflow.com/questions/40088875/loader-inside-a-table-td
+https://embed.plnkr.co/qOwmd9xJvwYdJ37wsKWX/
+
+
+
+responsive
+
+https://stackoverflow.com/questions/32301206/how-to-fold-table-columns-into-rows-on-mobile-devices
+https://css-tricks.com/responsive-data-tables/
+https://stackoverflow.com/questions/52387423/make-table-responsive-on-mobile-devices-using-html-css
